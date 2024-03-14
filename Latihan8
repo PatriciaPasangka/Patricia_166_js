@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Belajar Javascirpt Platform</title>
+    </head>
+    <body>
+        <h1>Belajar Javascirpt</h1>
+
+        <!--id hasil-->
+        <div id="hasil"></div>
+
+        <script>
+            var tanggal = new Date();
+
+            document.getElementById("hasil").innerHTML = tanggal;
+        </script>
+    </body>
+</html>
