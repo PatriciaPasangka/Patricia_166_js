@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator Penjumlahan</title>
+</head>
+<style>
+  .a{
+      background-color: #6f96b985;
+      border: 1px solid black;
+      text-align: center;
+      /* display: flex; */
+      justify-content: center;
+      }
+</style>
+<body>
+  <div class="a">
+<h2>Kalkulator Tambah/Kurang</h2>
+<form>
+  <label for="bilangan1">Bilangan 1:</label>
+  <input type="number" id="bilangan1" name="bilangan1"><br><br>
+  
+  <label for="bilangan2">Bilangan 2:</label>
+  <input type="number" id="bilangan2" name="bilangan2"><br><br>
+  
+  <button type="button" onclick="tambah()">Tambah</button>
+  <button type="button" onclick="kurang()">Kurang</button><br><br>
+  
+  <label for="hasil">Hasil:</label>
+  <input type="text" id="hasil" name="hasil" readonly><br><br>
+
+</form>
+
+<script>
+function tambah() {
+  var bilangan1 = parseInt(document.getElementById("bilangan1").value);
+  var bilangan2 = parseInt(document.getElementById("bilangan2").value);
+  var hasil = bilangan1 + bilangan2;
+  document.getElementById("hasil").value = hasil;
+}
+
+function kurang() {
+  var bilangan1 = parseInt(document.getElementById("bilangan1").value);
+  var bilangan2 = parseInt(document.getElementById("bilangan2").value);
+  var hasil = bilangan1 - bilangan2;
+  document.getElementById("hasil").value = hasil;
+}
+</script>
+</div>
+</body>
+</html>
